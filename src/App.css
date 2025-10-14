@@ -1,0 +1,197 @@
+/* === Global Styling === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #2b5876, #4e4376);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* === Form Container === */
+.form-container {
+  background: #fff;
+  width: 90%;
+  max-width: 480px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  padding: 30px;
+  text-align: center;
+}
+
+.title {
+  color: #4e4376;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* === Form Styling === */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form input,
+.form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form textarea {
+  resize: none;
+  height: 80px;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: #4e4376;
+  box-shadow: 0 0 5px rgba(78, 67, 118, 0.4);
+}
+
+button {
+  padding: 12px;
+  background-color: #4e4376;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #2b5876;
+}
+
+/* === ID Card Section === */
+.id-card-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* ID Card Box */
+.id-card {
+  width: 310px;
+  background: #ffffff;
+  border: 2px solid #4e4376;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: left;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Header */
+.id-header {
+  background: #4e4376;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+/* Content Layout */
+.id-content {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Photo */
+.photo-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.id-photo {
+  width: 90px;
+  height: 90px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 2px solid #4e4376;
+}
+
+/* Info */
+.info-section {
+  flex: 2;
+  font-size: 14px;
+  color: #333;
+}
+
+.info-section p {
+  margin-bottom: 5px;
+}
+
+/* QR Code Section */
+.qr-section {
+  text-align: center;
+  padding: 15px 0;
+  background: #f6f6f6;
+}
+
+/* Download Button */
+.download-btn {
+  background-color: #2b5876;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #4e4376;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === Responsive === */
+@media (max-width: 600px) {
+  .form-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .id-card {
+    width: 270px;
+  }
+
+  .id-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .photo-section {
+    margin-bottom: 10px;
+  }
+
+  .info-section {
+    font-size: 13px;
+  }
+}
