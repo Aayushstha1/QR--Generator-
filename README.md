@@ -12,7 +12,6 @@ This project allows users to fill out a form with personal details, upload a pho
 - 🔳 Auto-generate QR code with user data
 - 💾 Download the generated ID card as PNG
 - 🎨 Responsive and attractive UI
-- ⚡ Built with React + CSS only (no Tailwind)
 
 ---
 
